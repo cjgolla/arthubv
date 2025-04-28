@@ -1,0 +1,72 @@
+.body{
+ 
+    height:100%;
+}
+main{
+ 
+    height:100%;
+}
+header{
+    background-color: var(--black2);
+    width:100%;
+    height:400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+.header-links{
+    height: 60px;
+    width:100%;
+    background-color: var(--black6);
+    display: flex;
+    justify-content: center;
+}
+.links-holder{
+    justify-content: center;
+    width:100%;
+    display: flex;
+    align-items: center;
+    color: var(--white1)
+}
+.link{
+    margin:10px;
+}
+
+.artist-title{
+    margin-left:30px;
+    font-size: 4em;
+    color: var(--white1);
+    text-shadow: 3px 4px  10px black
+}
+
+/*/////////MAIN/////////*/
+
+.main-container{
+    display: flex;
+}
+.profile-pic{
+    width:200px;
+    height:200px;
+    background-color:var(--black5);
+    background-size:cover;
+    border-radius:50%;
+    margin-left: 10%;
+}
+
+@media (max-width: 700px){
+    .profile-pic{
+        height: 150px;
+        width: 150px;
+    }
+    header{
+        height:200px;
+    }
+}
+
+@media (max-width: 430px){
+    header{
+        height:200px;
+    }
+}

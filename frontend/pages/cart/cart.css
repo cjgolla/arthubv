@@ -1,0 +1,148 @@
+main{
+    display: flex;
+    justify-content: center;
+    background-color: var(--black3);
+}
+
+.cart-page{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    
+
+}
+.cart-column{
+    border: solid rgb(218, 218, 218);
+    border-width: 1px;
+    margin: 10px;
+    border-radius: 15px 15px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.grid-cart{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(10px, 1fr ));
+    grid-template-rows: 100px;
+    grid-auto-rows: minmax(200px, auto);
+    padding:10px;
+    
+    
+    border-radius: 20px 20px 5px 5px;
+}
+.grid-item{
+    background-color: var(--black6);
+    padding-bottom: 0px;
+    /* border: solid var(--white3); */
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.close-cart{
+    font-size:1.5em;
+    margin:5px;
+
+    font-weight: 0;
+    
+}
+
+.product-wrapper > img{
+    width:50%;
+}
+
+.collateral{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.collaterals{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:30px;
+    width:300px;
+    
+  
+}
+
+.collaterals > p, h4, .cart-total{
+    margin: 10px 0px 10px 0px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3em;
+}
+.card-icon{
+    text-align: center;
+    width:200px;
+    padding:5px;
+    border-radius: 15px;
+    margin: 10px 0px 10px 0px;
+    background-color: var(--black2);
+    margin-right: 10px;
+}
+.cart-total{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1500px){
+    .grid-cart{
+        grid-template-rows: 100px;
+        grid-auto-rows: minmax(130px, auto);
+    }
+}
+
+@media (max-width: 1350px){
+    h4{
+        font-size: 0.8em;
+    }
+    .cart-page{
+        display: block;
+    }
+    .collateral{
+        margin-top:30px;
+    }
+    .grid-cart{
+        grid-template-rows: 100px;
+        grid-template-columns: 1px repeat(4, minmax(20px, 1fr ));
+        
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .product-wrapper{
+        display: none;
+    }
+
+}
+@media (max-width: 500px){
+    h3{
+        font-size: 0.8em;
+    }
+    h4{
+        font-size: 0.6em;
+    }
+}
+@media (max-width: 400px){
+    .cart-column{
+        width:85%;
+        margin: 0px;
+    }
+}
